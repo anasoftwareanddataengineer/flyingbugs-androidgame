@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src= "@drawable/background"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48pt"
+        android:text="Chickens"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/play"
+        android:layout_below="@+id/highScoreTxt"
+        android:textColor="#ffffff"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/play"
+        android:src="@drawable/ic_baseline_play_arrow_24"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High Score"
+        android:layout_alignParentRight="true"
+        android:textSize="24pt"
+        android:textColor="#000000"
+        android:id="@+id/highScoreTxt"
+        android:layout_margin="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_height="36dp"
+        android:layout_width="36dp"
+        android:src= "@drawable/ic_baseline_volume_up_24"
+        android:layout_margin="16dp"
+        android:id="@+id/volumeCtrl"/>
+
+
+
+
+</RelativeLayout>
